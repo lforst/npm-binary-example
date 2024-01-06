@@ -12,7 +12,7 @@ const BINARY_DISTRIBUTION_PACKAGES = {
 };
 
 // Adjust the version you want to install. You can also make this dynamic.
-const BINARY_DISTRIBUTION_VERSION = "1.0.0";
+const BINARY_DISTRIBUTION_VERSION = "1.0.1";
 
 // Windows binaries end with .exe so we need to special case them.
 const binaryName = process.platform === "win32" ? "my-binary.exe" : "my-binary";

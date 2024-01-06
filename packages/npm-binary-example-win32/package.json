@@ -1,6 +1,6 @@
 {
   "name": "npm-binary-example-win32",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "os": [
     "win32"
   ]

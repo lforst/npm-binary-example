@@ -1,6 +1,6 @@
 {
   "name": "npm-binary-example-linux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "os": [
     "linux",
     "freebsd"

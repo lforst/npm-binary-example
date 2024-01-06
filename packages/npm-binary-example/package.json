@@ -1,6 +1,6 @@
 {
   "name": "npm-binary-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./index.js",
   "scripts": {
     "postinstall": "node ./install.js"
@@ -9,8 +9,8 @@
     "npm-binary-example": "bin/cli"
   },
   "optionalDependencies": {
-    "npm-binary-example-darwin": "1.0.0",
-    "npm-binary-example-linux": "1.0.0",
-    "npm-binary-example-win32": "1.0.0"
+    "npm-binary-example-darwin": "1.0.1",
+    "npm-binary-example-linux": "1.0.1",
+    "npm-binary-example-win32": "1.0.1"
   }
 }
