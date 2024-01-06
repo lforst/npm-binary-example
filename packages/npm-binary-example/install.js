@@ -67,17 +67,17 @@ function extractFileFromTarball(tarballBuffer, filepath) {
     offset += 512;
 
     const fileName = header.toString("utf-8", 0, 100).replace(/\0.*/g, "");
-
-    if (fileName !== filepath) {
-      continue;
-    }
-
     const fileSize = parseInt(
       header.toString("utf-8", 124, 136).replace(/\0.*/g, ""),
       8
     );
 
-    return tarballBuffer.subarray(offset, offset + fileSize);
+    if (fileName === filepath) {
+      return tarballBuffer.subarray(offset, offset + fileSize);
+    }
+
+    // Clamp offset to the uppoer multiple of 512
+    offset = (offset + fileSize + 511) & ~511;
   }
 }
 
