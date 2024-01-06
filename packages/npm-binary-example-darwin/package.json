@@ -1,0 +1,7 @@
+{
+  "name": "npm-binary-example-darwin",
+  "version": "1.0.0",
+  "os": [
+    "darwin"
+  ]
+}
