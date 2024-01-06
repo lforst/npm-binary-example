@@ -4,6 +4,9 @@
   "scripts": {
     "postinstall": "node ./install.js"
   },
+  "bin": {
+    "npm-binary-example": "bin/cli"
+  },
   "optionalDependencies": {
     "npm-binary-example-darwin": "1.0.0",
     "npm-binary-example-linux": "1.0.0",
